@@ -1,0 +1,149 @@
+/* @font-face {
+    font-family: testFont;
+    src: url(../fonts/Inter-VariableFont_slnt\,wght.ttf);
+} */
+@font-face {
+    font-family: testFontTwo;
+    src: url(../fonts/Rowdies-Regular.ttf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap');
+.notesContainer{
+    position: relative;
+    display: grid;
+    gap: 1.5rem;
+
+}
+
+.noteItem{
+    min-height: 330px;
+    border-radius: 10px;
+    background-color: #152238;
+}
+
+
+
+.inputUserData{
+    border-radius: 12px;
+    background-color: hsla(0,0%,100%,.05);
+    background-image: none;
+    color: #f7f9fd;
+    font-size: 16px;
+    font-weight: 400;
+    transition: border-color .15s ease-in-out 0s,box-shadow .15s ease-in-out 0s;
+    border: 0;
+    width: 100%;
+    font-size: 18px;
+    line-height: 1.42857143;
+    font-family: 'Inter', sans-serif;
+    transition: background-color .3s,color .3s;
+    -webkit-transition: background-color .3s,color .3s;
+    -moz-transition: background-color .3s,color .3s;
+    -ms-transition: background-color .3s,color .3s;
+    -o-transition: background-color .3s,color .3s;
+}
+.postTextBox{
+   
+    display: flex;
+    height: 80%;
+    padding: 10px 16px;
+   
+    vertical-align: middle;
+    resize: none;
+    -webkit-appearance: none;
+    overflow: auto;
+    
+
+}
+.titleData{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+   
+}
+.titleInputNote{
+    padding: 0 16px;
+    height: 40px;
+}
+.titleInputNote:focus{
+    outline: none;
+    border-color: hsla(0,0%,100%,.1);
+    background-color: #09162e;
+    color: #f7f9fd;
+    /* font-size: 16px;
+    font-weight: 400; */
+}
+.postTextBox:focus{
+    outline: none;
+    border-color: hsla(0,0%,100%,.1);
+    background-color: #09162e;
+    color: #f7f9fd;
+    /* font-size: 16px;
+    font-weight: 400; */
+}
+
+.textInputContent{
+   
+    padding: 24px;
+    height: 100%;
+    
+}
+.inputText{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 60%;
+    
+
+}
+.noteCreateForm{
+    height: 100%;
+}
+.postButton{
+    width: 45%;
+    background-color: #ff5f5f29 !important;
+    color: #ff5f5f !important;
+    border: 1px solid #ff5f5f29 !important;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    height: 46px;
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+.buttonContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 780px){
+    .notesContainer{
+        grid-template-columns: repeat(1,minmax(0,1fr));
+        
+    }
+    .noteItem{
+        max-width: 400px !important;
+    }
+        
+}
+@media only screen and (min-width: 780px){
+    .notesContainer{
+        grid-template-columns: repeat(2,minmax(0,1fr));
+        }
+}
+@media only screen and (min-width: 1050px){
+    .notesContainer{
+        grid-template-columns: repeat(3,minmax(0,1fr));
+        }
+}
+@media only screen and (min-width: 1340px){
+    .notesContainer{
+        grid-template-columns: repeat(4,minmax(0,1fr));
+        }
+}

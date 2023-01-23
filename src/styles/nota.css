@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap');
+
+.itemNoteContainer{
+    padding: 10px 2rem 20px 2rem;
+    border-width: 1px;
+    border-color: rgb(255 255 255/0.1);
+    border-radius: 10px;
+    background-color: rgba(255,255,255,.08);
+   position: relative;
+    
+}
+
+@media (max-width: 1200px){
+    .itemNoteContainer{
+        min-height: 330px;
+    }
+}
+.itemNoteContainer h4{
+    font-size: 1.5rem;
+    line-height: 1.1;
+    letter-spacing: .01em;
+    font-weight: bold;
+    /* margin-top: 1.5rem; */
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    word-wrap: break-word;
+}
+.itemNoteContainer .text-content-note{
+    font-size: 1.125rem;
+    line-height: 1.4;
+    letter-spacing: .01em;
+    margin-top: 1.9rem;
+    font-family: 'Inter', sans-serif;
+    word-wrap: break-word;
+    margin-bottom: 30px;
+    height: 40%;
+
+}
+.btnItemNote{
+    
+    
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px;
+   
+}
+.btn-card-note{
+    outline: none;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    --tw-bg-opacity: 1;
+    background-color: rgb(134 85 255/var(--tw-bg-opacity));
+    border-color: transparent;
+    border-width: 1px;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    height: 50px;
+    font-size: 20px;
+    letter-spacing: .15px;
+    line-height: 54px;
+    font-family: 'Inter', sans-serif;
+}
+@media only screen and (max-width: 780px){
+   .itemNoteContainer{
+    max-width: 350px;
+   }
+        
+}
+
+

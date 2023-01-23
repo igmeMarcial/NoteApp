@@ -1,0 +1,51 @@
+.App{
+  box-sizing: content-box;
+    max-width: 1200px;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+}
+@media (min-width: 64rem){
+  .App{
+   padding: 30px 60px;
+  }
+}
+@media (min-width: 48rem){
+  .App{
+    padding-left: 40px;
+      padding-right: 40px;
+  }
+}
+/* @media (min-width: 1024px){
+  .App{
+    max-width: 1024px;
+  }
+}
+@media (min-width: 890px){
+  .App{
+    max-width: 890px;
+  }
+}
+@media (min-width: 768px){
+  .App{
+    max-width: 768px;
+  }
+}
+@media (min-width: 640px){
+  .App{
+    max-width: 640px;
+  }
+}
+@media (min-width: 480px){
+  .App{
+    max-width: 480px;
+  }
+}
+@media (min-width: 400px){
+  .App{
+    max-width: 400px;
+  }
+} */
